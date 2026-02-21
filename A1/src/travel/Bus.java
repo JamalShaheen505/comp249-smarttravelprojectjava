@@ -1,5 +1,6 @@
 package travel;
-
+//Assignment 1
+//Jamal Shaheen (40327844)
 public class Bus extends Transportation {
 	
 // Attributes
@@ -66,3 +67,4 @@ public class Bus extends Transportation {
 		}
 
 }
+
