@@ -1,5 +1,6 @@
 package travel;
-
+//Assignment 1
+// Written by: Jamal SHaheen 40327844
 public class Train extends Transportation{
 
 // Attributes
@@ -73,3 +74,4 @@ public class Train extends Transportation{
 		}
 
 }
+
