@@ -2,7 +2,10 @@ package driver;
 
 //Assignment 1
 //Written by: Jamal Shaheen (40327844) & Marilou Grenier (40210227)
-//
+/*This program is a menu-driven travel management system for the company called SmartTravel.
+ * It's main goal is to allow employees to manage the clients, trips, transportations and accommodations.
+ * Any trip made will be linked to 1 client.
+*/
 import java.util.Scanner;
 
 import client.Client;
@@ -21,6 +24,7 @@ public class Driver {
 	public static void main(String[] args) {
 		
 // Menu choice between menu interface and predefined scenario		
+		System.out.println("Welcome to the Smart Travel system.");
 		System.out.println("======= Smart Travel =======");
 		System.out.println("1) Menu-driven interface");
 		System.out.println("2) Predefined scenario");
@@ -336,6 +340,7 @@ public class Driver {
             System.out.print("Choose: ");
 
             int choice2 = scanner.nextInt();
+            scanner.nextLine();
 
             switch (choice2) {
                 case 1 -> addClient();
@@ -861,7 +866,8 @@ public class Driver {
 	            switch (choice6) {
 	                case 1 -> mostExpensiveTrip();
 	                case 2 -> {
-	                	travel.calculateTotalCost();
+	                	Trip trip = new Trip();
+						trip.calculateTotalCost();
 	                }
 	                case 3 -> {
 	                    Transportation[] copy = copyTransportationArray(transports);
@@ -881,4 +887,3 @@ public class Driver {
 	
 
 }
-
